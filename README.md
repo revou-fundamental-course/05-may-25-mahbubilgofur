@@ -19,4 +19,4 @@ Ini adalah website portofolio saya sebagai Frontend Developer. Website ini menam
 
 ## 📷 Screenshot
 
-![Preview Website](./img/css.png)
+![Preview Website](./img/ssProject.png)
