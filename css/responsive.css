@@ -75,9 +75,9 @@
     margin-top: 200px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .prestasi-slide {
-    width: 100%;
+    width: 90%;
     max-width: 450px;
     height: 300px;
   }
@@ -92,8 +92,33 @@
     right: 1px;
   }
 }
+
 @media (max-width: 402px) {
   .home-text-baground {
     font-size: 90px;
+  }
+
+  .footer-container {
+    width: 90%;
+    font-size: 18px;
+    height: 100%;
+    color: rgb(245, 245, 245);
+  }
+}
+@media (max-width: 364px) {
+  .home-text-baground {
+    font-size: 80px;
+  }
+  .home-text1 {
+    left: 0;
+    font-size: 80px;
+  }
+
+  .home-text2 {
+    right: 0;
+    font-size: 90px;
+  }
+  .tentang-container {
+    margin-top: 250px;
   }
 }
