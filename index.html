@@ -5,10 +5,263 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PORTOFOLIO</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
 </head>
 <body>
-<marquee behavior="scroll" direction="left" scrollamount="20">
-  <h1>🌟 Portofolio Saya 🌟 | 💻 Web Developer 💻 | 📱 Responsive Design 📱</h1>
-</marquee>  <script src="js/script.js"></script>
+  <header>
+    <div class="header-judul">
+       <p> &lt;/&gt; Mahbubil Dev </p>
+    </div>
+    <div class="header-navbar">
+      <div class="tombol-nav">
+        <p>☰</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="navbar" id="navbar">
+    <nav>
+      <div class="tombolX-nav" id="closeBtn">X</div>
+      <ul>
+        <li id="li1"><a href="#home">Home</a></li>
+        <li id="li2"><a href="#tentang">Tentang</a></li>
+        <li id="li3"><a href="#project">Project</a></li>
+        <li id="li4"><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+    </div>
+    <section id="home">
+      <div class="home-baground">
+        <!-- <div class="home-aksesoris-content-profil1"></div> -->
+        <!-- <div class="home-aksesoris-content-profil2"></div> -->
+        <!-- <div class="home-aksesoris-content-profil3"></div> -->
+        <!-- <div class="home-aksesoris-content-profil4">
+          <img src="./img/pppp123.png" alt="">
+        </div> -->
+       <p class="home-text-baground">Frontend Web Developer</p>
+        <div class="home-content-profil">
+          <p class="home-text1">MAHBUB</p>
+          <p class="home-text2">GOFUR</p>
+            <div class="home-foto-profil">
+              <img src="./img/fotoprofil.png" alt="gambar dihalaman home">
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="tentang">
+      <h1>Tentang</h1>
+      <div class="tentang-container">
+      <div class="tentang-text">
+      <!-- <p class="tentang-text1">
+           Halo! Saya Mohammad Mahbubil Gofur, lulusan SMK jurusan Rekayasa Perangkat Lunak (RPL) yang memiliki minat besar di dunia pemrograman, khususnya di bidang Front-End Development. Meskipun belum memiliki pengalaman kerja profesional, saya sudah terbiasa bekerja secara 
+      </p>
+      <p class="tentang-text1">
+        kolaboratif dalam tim saat mengerjakan berbagai proyek website selama masa PKL dan tugas sekolah. Saya terus mengembangkan keterampilan dasar 
+      </p>
+      <p class="tentang-text1">
+        saya dalam HTML, CSS, dan JavaScript, serta memiliki semangat belajar yang tinggi. Saya siap memulai dari awal, bekerja keras, dan selalu 
+      </p>
+      <p class="tentang-text1">
+        berusaha memberikan hasil terbaik dalam setiap proses pembelajaran maupun pekerjaan yang saya jalani.
+      </p> -->
+      <p class="tentang-text1">
+        Halo! Saya Mohammad Mahbubil Gofur, seorang lulusan SMK jurusan Rekayasa Perangkat Lunak (RPL) dengan minat besar di dunia pemrograman, khususnya di bidang Front-End Development. Meskipun saya belum memiliki pengalaman kerja, saya sudah terbiasa bekerja dalam tim saat mengerjakan berbagai proyek website selama PKL dan tugas sekolah. Saya terus mengasah keterampilan saya dalam HTML, CSS, dan JavaScript, serta memiliki semangat belajar yang tinggi. Saya siap memulai dari awal, bekerja keras, dan selalu berusaha memberikan yang terbaik dalam setiap pembelajaran dan pekerjaan yang saya lakukan.
+      </p>
+      </div>
+      </div>
+    </section>
+    <section id="prestasi">
+      <h1>Prestasi</h1>
+      <div class="prestasi-slide">
+        <div class="prestasi-slide-container" id="slide-container">
+          <div class="slide" style="background-image: url('./img/sertifikat.jpg');">
+          </div>
+          <div class="slide" style="background-image: url('./img/sertifikat1.jpg');">
+          </div>
+          <div class="slide" style="background-image: url('./img/sertifikat2.jpg');">
+          </div>
+          <div class="slide" style="background-image: url('./img/sertifikat444.png');">
+          </div>
+          <div class="slide" style="background-image: url('./img/sertifikat4.png');">
+          </div>
+        </div>
+        <button class="tombol-btn kiri-btn" onclick="moveSlide(-1)">❮</button>
+        <button class="tombol-btn kanan-btn" onclick="moveSlide(1)">❯</button>
+        <div class="dots-slide" id="dots"></div>
+        <button class="pause-btn" id="pauseBtn">⏸</button>
+      </div>
+    </section>
+    <section id="skill">
+      <div class="baground-skill-efek"></div>
+       <div class="skill-container">
+     <canvas id="lineCanvas" width="1000" height="800"></canvas>
+    <div class="content-skill-center">
+      <p class="text-skill">SKILL</p>
+    <div class="konten-skill-center"></div>
+    <div class="konten-skill">
+    <div class="kontent-skill-dot"></div>
+    </div>
+    </div>
+    <div class="skill html">
+      <img src="./img/asset/html.svg" alt="">
+    </div>
+    <div class="skill css">
+      <img src="./img/asset/css.svg" alt="">
+    </div>
+    <div class="skill javascript">
+      <img src="./img/asset/javascript.svg" alt="">
+    </div>
+    <div class="skill php">
+      <img src="./img/asset/php.png" alt="">
+    </div>
+    <div class="skill mysql">
+      <img src="./img/asset/mysql.svg" alt="">
+    </div>
+    <div class="skill reactjs">
+      <img src="./img/asset/react.svg" alt="">
+    </div>
+    <div class="skill laravel">
+      <img src="./img/asset/laravel.svg" alt="">
+    </div>
+    <div class="skill codeigniter">
+      <img src="./img/asset/codeigniter.svg" alt="">
+    </div>
+  </div>
+    </section>
+    <section id="project">
+      <h1>Project</h1>
+      <!-- p1 -->
+      <div class="project-container">
+        <article class="project">
+          <div class="left-project">
+            <h2>AbsensiSiswa</h2>
+            <img src="./img/foto-project1.png" alt="">
+          </div>
+          <div class="right-project">
+            <div class="project-deskripsi">
+              <p class="text-deskripsiProject">Aplikasi Absensi Siswa berbasis web yang digunakan oleh siswa untuk melakukan absensi setiap hari sekolah. Aplikasi ini menyediakan tiga pilihan absensi, yaitu Hadir, Izin, dan Sakit.Untuk pilihan Hadir, terdapat dua tahap absensi: Absen Masuk dan Absen Pulang.
+              <div class="project-dibuat">
+               <li>CodeIgniter 3</li>
+               <li>Bootstrap</li>
+               <li>JavaScript</li>
+               <li>MySQL</li>
+              </div>
+            </div>
+              <div class="project-link-icon">
+                <a href="https://github.com/mahbubilgofur/Absensi_siswa"><img src="./img/asset/github.svg" alt=""></a>
+              </div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="left-project">
+            <h2>ShopEase</h2>
+            <img src="./img/foto-project2.png" alt="">
+          </div>
+          <div class="right-project">
+            <div class="project-deskripsi">
+              <p class="text-deskripsiProject">ShopEase adalah aplikasi toko online berbasis web yang memungkinkan pengguna untuk melihat produk, menambahkannya ke keranjang, dan melakukan checkout.</p>
+              <div class="project-dibuat">
+               <li>CodeIgniter 3</li>
+               <li>Bootstrap</li>
+               <li>JavaScript</li>
+               <li>MySQL</li>
+              </div>
+            </div>
+              <div class="project-link-icon">
+                <a href="https://github.com/mahbubilgofur/TOKO_K_STORE"><img src="./img/asset/github.svg" alt=""></a>
+              </div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="left-project">
+            <h2>BobbyPixel</h2>
+            <img src="./img/foto-project3.png" alt="">
+          </div>
+          <div class="right-project">
+            <div class="project-deskripsi">
+              <p class="text-deskripsiProject">BobbyPixel adalah aplikasi web yang memungkinkan pengguna untuk melihat berbagai gambar yang diunggah oleh pengguna lain.Dan pengguna bisa komen dan like pada gambar yang diunggah oleh pengguna lain.</p>
+              <div class="project-dibuat">
+               <li>CodeIgniter 3</li>
+               <li>CSS</li>
+               <li>JavaScript</li>
+               <li>MySQL</li>
+              </div>
+            </div>
+              <div class="project-link-icon">
+                <a href="https://github.com/mahbubilgofur/galery_foto"><img src="./img/asset/github.svg" alt=""></a>
+              </div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="left-project">
+            <h2>GrandEsport</h2>
+            <img src="./img/foto-project4.png" alt="">
+          </div>
+          <div class="right-project">
+            <div class="project-deskripsi">
+              <p class="text-deskripsiProject">GrandEsport adalah website yang menampilkan informasi seputar event turnamen Mobile Legends: Bang Bang (MLBB) dan dirancang untuk mempermudah pemain dalam mendaftar turnamen MLBB secara online melalui form pendaftaran yang tersedia.</p> 
+              <div class="project-dibuat">
+               <li>HTML</li>
+               <li>CSS</li>
+               <li>JavaScript</li>
+              </div>
+            </div>
+              <div class="project-link-icon">
+                <a href="https://github.com/mahbubilgofur/grandesport.github.io"><img src="./img/asset/github.svg" alt=""></a>
+              </div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="left-project">
+            <h2>Myproject</h2>
+            <img src="./img/foto-project5.png" alt="">
+          </div>
+          <div class="right-project">
+            <div class="project-deskripsi">
+              <p class="text-deskripsiProject">Website sederhana untuk mengonversi suhu antara Celsius (°C) dan Fahrenheit (°F). Dibuat dengan HTML, CSS, dan JavaScript.</p>
+              <div class="project-dibuat">
+               <li>HTML</li>
+               <li>CSS</li>
+               <li>JavaScript</li>
+              </div>
+            </div>
+              <div class="project-link-icon">
+                <a href="https://github.com/mahbubilgofur/MyProject.github.io"><img src="./img/asset/github.svg" alt=""></a>
+              </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="kontak">
+      <div class="left-kontak"></div>
+      <div class="right-kontak">
+        <div class="form-container">
+          <form action="">
+            <input type="text" placeholder="Nama" class="input" id="input-nama">
+              <p id="pesan-eror-1"></p>
+
+              <input type="text" placeholder="Email" class="input" id="input-email">
+                <p id="pesan-eror-2"></p>
+                <input type="text" placeholder="Subjek" class="input" id="input-subjek">
+                <p id="pesan-eror-3"></p>
+               <textarea placeholder="Pesan" class="inputpesan" id="input-pesan"></textarea>
+                <p id="pesan-eror-4"></p>
+                <button type="button" onclick="kirim()" class="buttonkontak">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <p>© 2025 Portofolio. Dibuat oleh ~MahbubilGofur.</p>
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

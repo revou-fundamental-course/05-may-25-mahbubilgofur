@@ -1,0 +1,99 @@
+@media (max-width: 1071px) {
+  .home-text-baground {
+    font-size: 150px;
+  }
+
+  .home-text1 {
+    left: 15%;
+  }
+
+  .home-text2 {
+    right: 15%;
+  }
+  .tentang-container {
+    margin-top: 90px;
+  }
+}
+@media (max-width: 903px) {
+  .tentang-container {
+    margin-top: 150px;
+  }
+  .left-kontak {
+    display: none;
+  }
+  .right-kontak {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 786px) {
+  .home-text1 {
+    left: 0;
+  }
+
+  .home-text2 {
+    right: 0;
+  }
+}
+@media (max-width: 640px) {
+  .prestasi-slide {
+    width: 95%;
+    max-width: 500px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 555px) {
+  .prestasi-slide {
+    width: 95%;
+    max-width: 400px;
+    height: 300px;
+  }
+}
+@media (max-width: 604px) {
+  .home-text-baground {
+    font-size: 120px;
+  }
+}
+@media (max-width: 481px) {
+  .home-text-baground {
+    font-size: 100px;
+  }
+  .home-text1 {
+    left: 0;
+    font-size: 100px;
+  }
+
+  .home-text2 {
+    right: 0;
+    font-size: 100px;
+  }
+  .tentang-container {
+    margin-top: 200px;
+  }
+}
+@media (max-width: 425px) {
+  .prestasi-slide {
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+  }
+  .tombol-btn {
+    padding: 10px 10px;
+  }
+  .kiri-btn {
+    left: 1px;
+  }
+
+  .kanan-btn {
+    right: 1px;
+  }
+}
+@media (max-width: 402px) {
+  .home-text-baground {
+    font-size: 90px;
+  }
+}
