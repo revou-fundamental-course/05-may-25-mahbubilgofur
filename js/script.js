@@ -202,38 +202,37 @@ function createParticles() {
 }
 
 // Fungsi untuk menggambar animasi kabel dan partikel
-  function animate() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      const center = getCenter();
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const center = getCenter();
 
-      skills.forEach((skill) => {
-        const x = skill.offsetLeft + skill.offsetWidth / 2;
-        const y = skill.offsetTop + skill.offsetHeight / 2;
+  skills.forEach((skill) => {
+    const x = skill.offsetLeft + skill.offsetWidth / 2;
+    const y = skill.offsetTop + skill.offsetHeight / 2;
 
-        ctx.beginPath();
-        ctx.moveTo(center.x, center.y);
-        ctx.lineTo(x, y);
-        ctx.strokeStyle = "rgba(117, 117, 117, 0.13)";
-        ctx.lineWidth = 2;
-        ctx.stroke();
-      });
+    ctx.beginPath();
+    ctx.moveTo(center.x, center.y);
+    ctx.lineTo(x, y);
+    ctx.strokeStyle = "rgba(117, 117, 117, 0.13)";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+  });
 
-      particles.forEach((p) => {
-        const x = p.start.x + (p.end.x - p.start.x) * p.progress;
-        const y = p.start.y + (p.end.y - p.start.y) * p.progress;
+  particles.forEach((p) => {
+    const x = p.start.x + (p.end.x - p.start.x) * p.progress;
+    const y = p.start.y + (p.end.y - p.start.y) * p.progress;
 
-        ctx.beginPath();
-        ctx.arc(x, y, 2, 0, Math.PI * 2);
-        ctx.fillStyle = "rgb(117, 117, 117)";
-        ctx.fill();
+    ctx.beginPath();
+    ctx.arc(x, y, 2, 0, Math.PI * 2);
+    ctx.fillStyle = "rgb(117, 117, 117)";
+    ctx.fill();
 
-        p.progress += p.speed;
-        if (p.progress > 1) p.progress = 0;
-      });
+    p.progress += p.speed;
+    if (p.progress > 1) p.progress = 0;
+  });
 
-      requestAnimationFrame(animate);
-    }
-
+  requestAnimationFrame(animate);
+}
 
 // Saat halaman dimuat, jalankan resize dan animasi
 window.addEventListener("load", () => {
